@@ -44,6 +44,9 @@
         {{~raw "topic-post-badges" unreadPosts=topic.unread_posts unseen=topic.unseen url=topic.lastUnreadUrl newDotText=newDotText}}
       {{~/if}}
     </span>
+    <a href="{{topic.creator.path}}" data-user-card="{{topic.creator.username}}">
+      {{topic.creator.name}}
+    </a>
     <div class="link-bottom-line">
       {{#unless hideCategory}}
         {{#unless topic.isPinnedUncategorized}}
@@ -126,6 +129,9 @@
         {{~raw "topic-post-badges" unreadPosts=topic.unread_posts unseen=topic.unseen url=topic.lastUnreadUrl newDotText=newDotText}}
       {{~/if}}
     </span>
+    <a href="{{topic.creator.path}}" data-user-card="{{topic.creator.username}}">
+      {{topic.creator.name}}
+    </a>
     <div class="link-bottom-line">
       {{#unless hideCategory}}
         {{#unless topic.isPinnedUncategorized}}
@@ -217,6 +223,9 @@
         {{~raw "topic-post-badges" unreadPosts=topic.unread_posts unseen=topic.unseen url=topic.lastUnreadUrl newDotText=newDotText}}
       {{~/if}}
     </span>
+    <a href="{{topic.creator.path}}" data-user-card="{{topic.creator.username}}">
+      {{topic.creator.name}}
+    </a>
     <div class="link-bottom-line">
       {{#unless hideCategory}}
         {{#unless topic.isPinnedUncategorized}}
